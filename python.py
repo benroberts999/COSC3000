@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
+import numpy as np
+from matplotlib import pyplot as plt
 
 filename = "data.dat"
 
+# read the file into a "file" object
 file1 = open(filename,"r")
 
-# print(file1)
-
+# and extract the contents as a string (don't often actually need this)
 contents = file1.read()
 
-# print(file1.read())
-
-# Normally, imports go at the top of the file
-# But I want to deonstrate what import is required for each step
-import numpy as np
+# -------------------
 
 # Read file as 2D (x,y) array - sometimes useful, sometimes not
 xy_data = np.loadtxt(filename)
@@ -21,12 +19,13 @@ xy_data = np.loadtxt(filename)
 x_data = np.loadtxt(filename, usecols=0)
 y_data = np.loadtxt(filename, usecols=1)
 
+# https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html
+
+# The 'genfromtxt' function is similar, but gives some mor fine-tuned controls
+# https://numpy.org/doc/stable/reference/generated/numpy.genfromtxt.html
+
 # note: for *very* large input files, this might be too slow
 # since it reads through the file twice.
-
-# print(xy_data)
-# print(x_data)
-# print(y_data)
 
 # We can also extract the x and y parts of the xy array:
 # If we have huge data files, we want to avoid needless copies,
@@ -34,14 +33,10 @@ y_data = np.loadtxt(filename, usecols=1)
 x_data_2 = xy_data[:,0]
 y_data_2 = xy_data[:,1]
 
-
-from matplotlib import pyplot as plt
-
+# Example: plot the data
 plt.title('Example: plot of function')
 plt.xlabel('variable (units)')
 plt.ylabel('function (units)')
-
-
 plt.plot(x_data, y_data, 'r-', label = "function")
 plt.plot(x_data, y_data*(1.25), 'k--', label = "error")
 plt.plot(x_data, y_data*(0.75), 'k--')
