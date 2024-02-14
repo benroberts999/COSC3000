@@ -1,5 +1,7 @@
-# A comment
-xlabel,ylabel
+-----------------
+| An annoying header
+-----------------
+# xlabel,ylabel
 0.00,0.20000
 0.10,0.30673
 0.20,0.30619
