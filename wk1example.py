@@ -2,6 +2,9 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
+
+""" This is just a python version of the 'wk1example.m' matlab example """
+
 x = np.linspace(-np.pi, np.pi, 500)
 
 y1 = np.sin(x)
