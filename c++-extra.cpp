@@ -28,7 +28,7 @@ int main() {
   std::vector<std::array<double, number_columns>> xy;
 
   // Numbr of initial rows to discard (i.e., discard header)
-  const int skip_rows = 3;
+  const int skip_rows = 4;
 
   // Character to signify line is a comment:
   const char comment_charecter = '#';
