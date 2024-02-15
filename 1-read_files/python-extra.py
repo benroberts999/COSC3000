@@ -13,16 +13,16 @@ xlabel = column_names[0]
 ylabel = column_names[1]
 
 # With "names", can address the columns by their name (string)
-x_data = xy_data['xlabel']
-y_data = xy_data['ylabel']
+x_data = xy_data["xlabel"]
+y_data = xy_data["ylabel"]
 
 # Example: plot the data
-plt.title('Example: plot of function')
-plt.xlabel(column_names[0] + ' (units)')
-plt.ylabel('function (units)')
-plt.plot(x_data, y_data, 'r-', label = column_names[1])
-plt.plot(x_data, y_data*(1.25), 'k--', label = "error")
-plt.plot(x_data, y_data*(0.75), 'k--')
+plt.title("Example: plot of function")
+plt.xlabel(column_names[0] + " (units)")
+plt.ylabel("function (units)")
+plt.plot(x_data, y_data, "r-", label=column_names[1])
+plt.plot(x_data, y_data * (1.25), "k--", label="error")
+plt.plot(x_data, y_data * (0.75), "k--")
 plt.legend()
 
 plt.show()
