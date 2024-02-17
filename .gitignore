@@ -20,6 +20,7 @@
 
 !**/*.mat
 !**/*.nb
+!**/*.ipynb
 
 ## ... continue to list any file-types you want git to track
 !**/*.txt
