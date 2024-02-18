@@ -1,20 +1,24 @@
 # Read text files - examples
 
-* Examples in:
-  * python
-  * Mathematica
-  * C++
-  * C (because it's still 1992 somewhere)
-  * gnuplot
+Some basic examples for reading (and plotting) various types of text file.
 
-* "data.dat" is a simple white-space delimetered text file, with no comments, and no header.
+* Examples in:
+  * python ([python.py](./python.py), [python-extra.py](./python-extra.py))
+  * C++ ([c++.cpp](./c++.cpp), [c++-extra.cpp](./c++-extra.cpp))
+  * gnuplot ([gnuplot.gnu](./gnuplot.gnu), [gnuplot-extra.gnu](./gnuplot-extra.gnu))
+  * Mathematica ([mathematica.nb](./mathematica.nb))
+    * You'll need Mathematica installed (+Licence) to use this, don't worry if not
+  * C ([c.c](./c.c), [c-extra.c](./c-extra.c))
+    * ..because it's still 1992 somewhere
+
+* ["data.dat"](./data.dat) is a simple white-space delimetered text file, with no comments, and no header.
 This is typically the simplest/easiest format to read in.
 
-* "data-csv-labels.dat" is a comma separated file, with column headers, and a data header at the top that we need to skip/ignore, and comments
+* ["data-csv-labels.dat"](./data-csv-labels.dat) is a comma separated file, with column headers, and a data header at the top that we need to skip/ignore, and comments
 
 * The python, C++, C, and gnuplot examples marked "extra" will read in the more complicated CSV data.
 
-* Some really handy matplotlib (python plotting packing) "cheatsheets" are available: [https://matplotlib.org/cheatsheets/](matplotlib cheatsheets)
+* Some really handy matplotlib (python plotting packing) "cheatsheets" are available: [matplotlib cheatsheets](https://matplotlib.org/cheatsheets/)
 
 The resulting plots should look something like this:
 
