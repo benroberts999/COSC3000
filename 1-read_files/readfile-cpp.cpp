@@ -7,8 +7,14 @@
 
 /*
   This example is for a simple plain text file using C++
-  That is white-space delimetered, and conatins no comments/header.
+  That is white-space delimetered, and contains no comments/header.
   See "extra" example for more complicated case.
+
+  compile: gcc readfile-cpp.cpp -o readfile-cpp
+  run:     ./readfile-cpp
+
+  On older compilers, may need: g++ -std=c++17 readfile-cpp.cpp
+  On even older compilers, remove the C++17 feature as commented below
 */
 
 int main() {
@@ -17,6 +23,11 @@ int main() {
 
   // Open the file using "in-file-stream"
   std::ifstream input_file{file_name};
+
+  if (!input_file.is_open()) {
+    std::cout << "Error: File " << file_name << " could not be opened\n";
+    return 1;
+  }
 
   // Arrays to store x and y data separately
   std::vector<double> x{}, y{};

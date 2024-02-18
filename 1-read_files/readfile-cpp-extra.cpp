@@ -9,6 +9,12 @@
   This C++ example is for more general data file.
   It allows multiple collumns, comments, skipped header lines, arbitrary
   delimeters etc
+
+  compile: gcc readfile-cpp-extra.c -o readfile-cpp-extra
+  run:     ./readfile-cpp-extra
+
+  On older compilers, may need: g++ -std=c++17 readfile-cpp.cpp
+  On even older compilers, remove the C++17 feature as commented below
 */
 
 int main() {
@@ -17,6 +23,11 @@ int main() {
 
   // Open the file using "in-file-stream"
   std::ifstream input_file{file_name};
+
+  if (!input_file.is_open()) {
+    std::cout << "Error: File " << file_name << " could not be opened\n";
+    return 1;
+  }
 
   // (Since we use std::array for inner array, this needs to be 'static' or
   // 'constexpr' for static-sized array. If we don't know the number of rows,

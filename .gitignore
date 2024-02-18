@@ -9,6 +9,7 @@
 
 ## except: any file in any subdirectory that matches:
 !**/*.md
+
 !**/*.cpp
 !**/*.hpp
 !**/*.ipp
@@ -17,11 +18,11 @@
 !**/*.sh
 !**/*.gnu
 !**/*.py
-
+!**/*.ipynb
 !**/*.mat
 !**/*.m
 !**/*.nb
-!**/*.ipynb
+
 
 ## ... continue to list any file-types you want git to track
 !**/*.txt
