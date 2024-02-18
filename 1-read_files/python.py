@@ -2,6 +2,11 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
+""" 
+Example python script for reading simple white-spaced delimitered file
+into a numpy array, and plotting it.
+"""
+
 filename = "data.dat"
 
 # read the file into a "file" object

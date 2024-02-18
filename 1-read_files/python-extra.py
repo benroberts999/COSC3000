@@ -2,6 +2,12 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
+""" 
+Example python script for reading more complicated delimitered files
+(including arbitrary delimeters, comments, header lines etc.)
+into a numpy array, and plotting it.
+"""
+
 filename = "data-csv-labels.dat"
 
 xy_data = np.genfromtxt(

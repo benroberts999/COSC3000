@@ -6,7 +6,7 @@
 #include <vector>
 
 /*
-  This example is for more general data file
+  This C++ example is for more general data file.
   It allows multiple collumns, comments, skipped header lines, arbitrary
   delimeters etc
 */

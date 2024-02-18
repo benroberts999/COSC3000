@@ -6,9 +6,9 @@
 #include <vector>
 
 /*
-  This example is for a simple plain text file
+  This example is for a simple plain text file using C++
   That is white-space delimetered, and conatins no comments/header.
-  See "extra" example for more complicated case
+  See "extra" example for more complicated case.
 */
 
 int main() {

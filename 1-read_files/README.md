@@ -4,6 +4,7 @@
   * python
   * Mathematica
   * C++
+  * C (because it's still 1992 somewhere)
   * gnuplot
 
 * "data.dat" is a simple white-space delimetered text file, with no comments, and no header.
@@ -11,7 +12,7 @@ This is typically the simplest/easiest format to read in.
 
 * "data-csv-labels.dat" is a comma separated file, with column headers, and a data header at the top that we need to skip/ignore, and comments
 
-* The python, C++, and gnuplot examples with "extra" will read in the more complicated CSV data.
+* The python, C++, C, and gnuplot examples marked "extra" will read in the more complicated CSV data.
 
 * Some really handy matplotlib (python plotting packing) "cheatsheets" are available: [https://matplotlib.org/cheatsheets/](matplotlib cheatsheets)
 
@@ -22,7 +23,7 @@ The resulting plots should look something like this:
 | ![](./output/python.png) | ![](./output/gnuplot.png) | ![](./output/Mathematica.png)  |
 
 
-The C++ file just reads in the data.
+The C++ and C examples just reads in the data.
 There isn't a built-in C++ function for plotting (there are libraries, but they are not commonly used). 
 Instead, you typically do any analysis inside the code, then output a text file for plotting.
 
