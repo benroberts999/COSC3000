@@ -8,6 +8,8 @@ Some basic examples for reading (and plotting) various types of text file.
   * gnuplot ([gnuplot.gnu](./gnuplot.gnu), [gnuplot-extra.gnu](./gnuplot-extra.gnu))
   * Mathematica ([mathematica.nb](./mathematica.nb))
     * You'll need Mathematica installed (+Licence) to use this, don't worry if not
+  * Matlab ([matlab.m](./matlab.m), [matlab_extra.m](./matlab_extra.m))  
+    * ..because it's still 1997 somewhere
   * C ([c.c](./c.c), [c-extra.c](./c-extra.c))
     * ..because it's still 1992 somewhere
 
@@ -22,9 +24,11 @@ This is typically the simplest/easiest format to read in.
 
 The resulting plots should look something like this:
 
-| Python  | Gnuplot  | Mathematica  |
-|---|---|---|
-| ![](./output/python.png) | ![](./output/gnuplot.png) | ![](./output/Mathematica.png)  |
+| Python  | Gnuplot  | 
+|---|---|
+| ![](./output/python.png) | ![](./output/gnuplot.png) | 
+| Mathematica  | Matlab  |
+| ![](./output/Mathematica.png) | ![](./output/matlab.png) | 
 
 
 The C++ and C examples just reads in the data.
