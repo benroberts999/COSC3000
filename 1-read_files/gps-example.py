@@ -126,8 +126,7 @@ sat_data["Time"] = sat_data.apply(convert_time, axis=1)
 
 print("Plot raw clock data:\n")
 
-# When plotting, we change x-axis units to hours, and y-axis to nanoseconds,
-# for improved legibility
+# When plotting, we change the y-axis to nanoseconds (1e9 ns = 1s) for improved legibility
 plt.title("Raw bias data")
 plt.xlabel("Hours since " + date_string)
 plt.ylabel("Bias (ns)")
@@ -191,4 +190,6 @@ for count, clock in enumerate(clock_list):
     plt.plot(time, error1 * 1e9, "k--", linewidth=0.5)
     plt.plot(time, error2 * 1e9, "k--", linewidth=0.5)
 plt.legend()
+fig = plt.gcf()
+fig.savefig("gps-example.png")
 plt.show()

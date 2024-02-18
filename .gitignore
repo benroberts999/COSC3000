@@ -25,3 +25,6 @@
 ## ... continue to list any file-types you want git to track
 !**/*.txt
 !**/*.dat
+
+# Also track anything put in an 'output/' directory
+!**/output/*

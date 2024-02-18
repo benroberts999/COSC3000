@@ -1,6 +1,12 @@
 #!/usr/bin/env gnuplot
 set term wxt persist
 
+# To save directly to png, replace above with:
+# There are many really nice terminals, particularly cairolatex
+
+# set term pngcairo
+# set output "gnuplot.png"
+
 # See:
 # https://gnuplotting.org/output-terminals/index.html
 # for terminal (font/style etc.) options

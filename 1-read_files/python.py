@@ -27,13 +27,6 @@ y_data_2 = xy_data[:, 1]
 x_data = np.genfromtxt(filename, usecols=0)
 y_data = np.genfromtxt(filename, usecols=1)
 
-# For different delimeters, use:
-# xy_data = np.loadtxt(filename, delimiter=",")
-
-# By default, pythong considers '#' to be a comment
-# We can change this, using 'comments' field:
-# xy_data = np.loadtxt(filename, delimiter=",", comments='!')
-
 # Full documentation:
 # https://numpy.org/doc/stable/reference/generated/numpy.genfromtxt.html
 # The 'loadtxt' function is similar, but is a little less advanced
@@ -47,5 +40,12 @@ plt.plot(x_data, y_data, "r-", label="function")
 plt.plot(x_data, y_data * (1.25), "k--", label="error")
 plt.plot(x_data, y_data * (0.75), "k--")
 plt.legend()
+
+# This saves the current plot (Get Current Figure), so we can show, then save
+fig = plt.gcf()
+fig.savefig("python.png")
+
+# This works too, but also 'resets' the plt figure
+# plt.savefig("python.png")
 
 plt.show()

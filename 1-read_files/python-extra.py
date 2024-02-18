@@ -4,7 +4,11 @@ from matplotlib import pyplot as plt
 
 filename = "data-csv-labels.dat"
 
-xy_data = np.genfromtxt(filename, delimiter=",", names=True, skip_header=3)
+xy_data = np.genfromtxt(
+    filename, delimiter=",", names=True, skip_header=3, comments="#"
+)
+
+# nb: " comments='#' " is actually the default, but I put it explicitely for example
 
 # We can get the column names if we set 'names=True':
 column_names = xy_data.dtype.names
@@ -25,4 +29,6 @@ plt.plot(x_data, y_data * (1.25), "k--", label="error")
 plt.plot(x_data, y_data * (0.75), "k--")
 plt.legend()
 
+fig = plt.gcf()
+fig.savefig("python-extra.png")
 plt.show()
