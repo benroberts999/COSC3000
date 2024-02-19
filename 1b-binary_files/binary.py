@@ -10,10 +10,6 @@ bin_filename2 = "data.binary2"
 # As a start, read in the same example data from from before
 xy_data = np.genfromtxt(filename)
 
-# Just to make the numbers not round, multiply by pi:
-xy_data *= np.pi
-
-
 # Write out to text file, keeping full precission:
 np.savetxt(txt_filename, xy_data)
 
@@ -24,7 +20,7 @@ np.savetxt(txt_filename, xy_data)
 
 
 # Now, write to file in binar format:
-xy_data.tofile(bin_filename + "2")
+xy_data.tofile(bin_filename)
 
 # The above is equivilant to:
 with open(bin_filename2, "wb") as file:
@@ -32,11 +28,9 @@ with open(bin_filename2, "wb") as file:
         file.write(x)
         file.write(y)
 
-
 # Look at the file sizes of the text vs. binary file:
 # The binary file should be ~3x smaller.
 # This is because we only wrote the exact required bytes to the file.
-
 
 xy_data_in = np.fromfile(bin_filename)
 xy_data_in2 = np.fromfile(bin_filename2)

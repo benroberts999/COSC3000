@@ -2,7 +2,7 @@
 import numpy as np
 import pickle as pkl
 
-# pip install pickle5
+# requires: pip install pickle5
 
 filename = "data.dat"
 

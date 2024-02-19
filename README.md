@@ -12,7 +12,11 @@ Feel free to comment, submit pull request if you spot any errors, have a nicer w
   * Examples in: python, C++, gnuplot, matlab, Mathematica, C
   * See [README-read_files.md](./1-read_files/README-read_files.md) for details
 
-* [1b-GPS-examples](./1b-GPS-example/)
+* [1b-binary_files](./1b-binary_files/)
+  * Examples of reading/writing binary files
+  * See [README_binary-files.md](./1b-binary_files/README_binary-files.md) for details
+
+* [1c-GPS-examples](./1c-GPS-example/)
   * A more complicated "real world" example, using skills from above
   * Plots public atomic clock data from GPS (provided by JPL/NASA)
-  * See [README_GPS-example.md](./1b-GPS-example/README_GPS-example.md) for details
+  * See [README_GPS-example.md](./1c-GPS-example/README_GPS-example.md) for details
