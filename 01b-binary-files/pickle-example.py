@@ -4,15 +4,12 @@ import pickle as pkl
 
 # requires: pip install pickle5
 
-filename = "data.dat"
-
 pkl_filename = "data.pkl"
 
-# As a start, read in the same example data from from before
-xy_data = np.genfromtxt(filename)
-
-# Just to make the numbers not round, multiply by pi:
-xy_data *= np.pi
+# Generate x/y data as before
+x = np.linspace(0.0, 2 * np.pi, 25)
+y = np.cos(x)
+xy_data = np.column_stack((x, y))
 
 with open(pkl_filename, "wb") as file:
     pkl.dump(xy_data, file)

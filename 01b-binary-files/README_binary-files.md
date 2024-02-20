@@ -18,8 +18,8 @@ This is the fastest and most storage-efficient method to read/write data, and is
 ### Examples
 
 * The python script [binary.py](./binary.py):
-  * Reads a regular text file into an array (as in previous examples).
-  * It then writes the array to file in (a) text format, and (b) raw binary format.
+  * Generates some x/y data
+  * It then writes this array to file in (a) text format, and (b) raw binary format.
   * It's instructive to compare the file sizes of these files.
   * It then reads the binary file back in
 

@@ -1,14 +1,22 @@
 #!/usr/bin/env python3
 import numpy as np
 
-filename = "data.dat"
-
 txt_filename = "data.text"
 bin_filename = "data.binary"
 bin_filename2 = "data.binary2"
 
-# As a start, read in the same example data from from before
-xy_data = np.genfromtxt(filename)
+# Generate x data: linearly spaced list, from 0 to 2Pi in 100 points
+x = np.linspace(0.0, 2 * np.pi, 25)
+
+# Generate y data: cosine of the x-data
+y = np.cos(x)
+
+# For illustrative purpose, zip this data into a 2D array:
+xy_data = np.column_stack((x, y))
+
+# (You could of course do this all in one go, but I want to illistrate
+# the methods clearly at first)
+
 
 # Write out to text file, keeping full precission:
 np.savetxt(txt_filename, xy_data)
