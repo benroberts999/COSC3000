@@ -4,6 +4,7 @@ Some basic examples for reading (and plotting) various types of text file.
 
 * Examples in:
   * python ([readfile-py.py](./readfile-py.py), [readfile-py-extra.py](./readfile-py-extra.py))
+    * python notebook: [readfile-ipynb-extra.ipynb](./readfile-ipynb-extra.ipynb) is a notebook version of `readfile-py-extra.py`
   * C++ ([readfile-cpp.cpp](./readfile-cpp.cpp), [readfile-cpp-extra.cpp](./readfile-cpp-extra.cpp))
   * gnuplot ([readfile-gpl.gnu](./readfile-gpl.gnu), [readfile-gpl-extra.gnu](./readfile-gpl-extra.gnu))
   * Mathematica ([readfile-mma.nb](./readfile-mma.nb))
