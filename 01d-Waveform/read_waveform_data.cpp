@@ -5,6 +5,9 @@
 #include <iostream>
 #include <vector>
 
+// g++ -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion
+// read_waveform_data.cpp
+
 int main() {
 
   // You could of course take this in as input!
@@ -81,6 +84,12 @@ int main() {
   char cookie[2];
   input_file.read(reinterpret_cast<char *>(&cookie), sizeof(cookie));
   std::cout << "cookie: " << cookie[0] << " " << cookie[1] << "\n";
+  if (cookie[0] == 'R' && cookie[1] == 'G') {
+    std::cout << "File is in RIGOL format\n";
+  } else {
+    std::cout << "Error: file is NOT in RIGOL format\n";
+    return 1;
+  }
 
   u_int16_t version;
   input_file.read(reinterpret_cast<char *>(&version), sizeof(version));
@@ -186,21 +195,19 @@ int main() {
         sizeof(Xd_origin) + sizeof(X_inc) + sizeof(X_origin) + sizeof(x_units) +
         sizeof(y_units) + sizeof(date) + sizeof(time) + sizeof(model) +
         sizeof(channel);
+    // you can do this by hand of course, it = 128
 
     // We were told the size of the header. Did we read that many bytes?
     // No! The header is larger than the data stored there:
     std::cout << "Read: " << size_read << "/" << header_size
               << " header bytes\n";
-    const auto jump = header_size - size_read;
-
-    // The following will all work:
-
-    // input_file.seekg(std::size_t(input_file.tellg()) + jump);
-
-    // std::vector<char> a(jump);
-    // input_file.read(a.data(), a.size());
+    const auto jump = long(header_size - size_read);
+    // nb: casting to long here not required, but .ignore() expects a long int
 
     input_file.ignore(jump);
+
+    // The following would also work:
+    // input_file.seekg(std::size_t(input_file.tellg()) + jump);
 
     //----------------------------------------------------------------------------
     std::cout << "-- Table 20.4 : Waveform Data Header --\n";
@@ -234,7 +241,7 @@ int main() {
 
     std::vector<float> data(points);
     assert(buffer_size == sizeof(float) * points);
-    input_file.read(reinterpret_cast<char *>(data.data()), buffer_size);
+    input_file.read(reinterpret_cast<char *>(data.data()), long(buffer_size));
 
     // // Above (almost) equvilant to
     // std::vector<float> data;
