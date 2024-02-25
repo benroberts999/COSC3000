@@ -23,26 +23,27 @@ combined_scenarios = [
 ################################################################################
 
 
-def combined_score(filename, weights):
+def combined_score(filename, weights, discard_incomplete=False):
     """Calculates the 'score' for a single session/file.
-    Assumes total session duration is 360s, otherwise returns 'nan'.
+    Optionally: discards incomplete sessions (returns nan)
     This could be modified simply to also return other details of the session."""
     with open(filename, "r") as file:
         score = 0.0
         total_duration = 0.0
         t_end_prev = 0.0
         for count, line in enumerate(file.readlines()):
-            # print(count, line)
             data = line.split(",", 4)
             if count == 0:
                 continue
             if line[0] == "*":
                 break
 
+            # Extract relevant data from each line:
             t_catagory = int(data[0])
             t_beg = int(data[1])
             t_end = int(data[2])
 
+            # Some basic consistancy checks:
             if t_beg != t_end_prev:
                 print("Error, missing time stamp?")
             t_end_prev = t_end
@@ -54,8 +55,11 @@ def combined_score(filename, weights):
             duration = float(t_end - t_beg)
             total_duration += duration
             score += weights[t_catagory - 1] * duration
-        return score / total_duration
-        return score if np.abs(total_duration - 1.0) < 1.0e-5 else np.nan
+        session_complete = np.abs(total_duration - 360.0) < 1.0e-5
+        score /= total_duration
+        if discard_incomplete:
+            return score if session_complete else np.nan
+        return score
 
 
 ################################################################################

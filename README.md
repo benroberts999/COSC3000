@@ -10,23 +10,23 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 
 ## Week 1
 
-* [01-read-files](./01-read-files/)
+* [read-files](./01-week1/read-files/)
   * A number of basic examples showing reading in text files + plotting
   * Examples in: python, C++, gnuplot, matlab, Mathematica, C
-  * See [README-read-files.md](./01-read-files/README-read-files.md) for details
+  * See [README-read_files.md](./01-week1/read-files/README-read_files.md) for details
 
-* [01b-binary-files](./01b-binary-files/)
+* [binary-files](./01-week1/binary-files/)
   * Examples of reading/writing binary files
-  * See [README_binary-files.md](./01b-binary-files/README_binary-files.md) for details
+  * See [README_binary-files.md](./01-week1/binary-files/README_binary-files.md) for details
 
-* [01c-GPS-example](./01c-GPS-example/)
+* [GPS-example](./01-week1/GPS-example/)
   * A more complicated "real world" example, using skills from above
     * (This will probably be more accessible after a few weeks of the course, but I give it to you now for your interest)
   * Plots public atomic clock data from GPS (provided by JPL/NASA)
-  * See [README_GPS-example.md](./01c-GPS-example/README_GPS-example.md) for details
+  * See [README_GPS-example.md](./01-week1/GPS-example/README_GPS-example.md) for details
 
-* [01d-Waveform](./01d-Waveform)
-  * A python (and C++) version of the matlab script to read the binary waveform data from week 1 tutorial
+* [waveform](./01-week1/waveform)
+  * Python and C++ versions of the matlab script to read the binary waveform data from week 1 tutorial
 
-* [01e-Proj1-example](./01e-Proj1-example)
+* [proj1-example](./01-week1/proj1-example)
   * A bare-bones python example similar to provided matlab example for first project
