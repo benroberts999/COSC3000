@@ -24,3 +24,9 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
     * (This will probably be more accessible after a few weeks of the course, but I give it to you now for your interest)
   * Plots public atomic clock data from GPS (provided by JPL/NASA)
   * See [README_GPS-example.md](./01c-GPS-example/README_GPS-example.md) for details
+
+* [01d-Waveform](./01d-Waveform)
+  * A python (and C++) version of the matlab script to read the binary waveform data from week 1 tutorial
+
+* [01e-Proj1-example](./01e-Proj1-example)
+  * A bare-bones python example similar to provided matlab example for first project
