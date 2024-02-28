@@ -2,7 +2,7 @@
 import numpy as np
 import glob
 
-data_directory = "./vis_project_data/"
+data_directory = "../../vis_project_data/"
 
 # Default weights; used if not set
 default_weights = np.array([-1, 0, 1, 2, 2, 3, 5])
