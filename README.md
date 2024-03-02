@@ -8,7 +8,7 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 * [00-Basic](./00-Basic/)
   * Some very basic introductory python versions of matlab scripts
 
-## Week 1
+## [Week 1](./01-week1)
 
 * [read-files](./01-week1/read-files/)
   * A number of basic examples showing reading in text files + plotting
@@ -28,5 +28,10 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 * [waveform](./01-week1/waveform)
   * Python and C++ versions of the matlab script to read the binary waveform data from week 1 tutorial
 
-* [proj1-example](./01-week1/proj1-example)
+## [proj1-example](./01-proj1-example)
   * A bare-bones python example similar to provided matlab example for first project
+
+## [Week 2](./02-week2)
+
+* Example "height" data plots from the lecture
+* Solutions to week 2 workshop (flu data)

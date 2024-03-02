@@ -2,7 +2,7 @@
 import numpy as np
 import glob
 
-data_directory = "../../vis_project_data/"
+data_directory = "../vis_project_data/"
 
 # Default weights; used if not set
 default_weights = np.array([-1, 0, 1, 2, 2, 3, 5])
@@ -106,6 +106,7 @@ def print_scores(
         print(
             f"{ses_type:3} {whatdoor:7} {which:5}: {mean:6.3f} +/- {sem:.3f}  [{len(scores)}/{len(files)}]"
         )
+        return scores
 
 
 ################################################################################
