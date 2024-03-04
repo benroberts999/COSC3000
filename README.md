@@ -35,3 +35,7 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 
 * Example "height" data plots from the lecture
 * Solutions to week 2 workshop (flu data)
+
+## [Week 3](./03-week3)
+
+* Bivariate examples: fit, correlations, weigthed fit
