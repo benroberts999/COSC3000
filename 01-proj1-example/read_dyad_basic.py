@@ -8,13 +8,13 @@ data_directory = "../vis_project_data/"
 default_weights = np.array([-1, 0, 1, 2, 2, 3, 5])
 
 # Types of sessions/files:
-# session_types = ["cog", "so"]
-# whatdoors = ["indoor", "outdoor"]
-# whichs = ["base", "inter"]
+session_types = ["cog", "so"]
+whatdoors = ["indoor", "outdoor"]
+whichs = ["base", "inter"]
 
-session_types = ["so"]
-whatdoors = ["indoor"]
-whichs = ["base"]
+# session_types = ["so"]
+# whatdoors = ["indoor"]
+# whichs = ["base"]
 
 # Combine to single itteratable list
 combined_scenarios = [
