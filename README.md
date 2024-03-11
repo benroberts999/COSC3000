@@ -29,7 +29,8 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
   * Python and C++ versions of the matlab script to read the binary waveform data from week 1 tutorial
 
 ## [proj1-example](./01-proj1-example)
-  * A bare-bones python example similar to provided matlab example for first project
+
+* A bare-bones python example similar to provided matlab example for first project
 
 ## [Week 2](./02-week2)
 
