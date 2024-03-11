@@ -40,3 +40,7 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 ## [Week 3](./03-week3)
 
 * Bivariate examples: fit, correlations, weigthed fit
+
+## [Week 4](./04-week4)
+
+* Time-series data examples, including Fourier transforms, autocorrelation, heatmaps, seasonal trends etc.
