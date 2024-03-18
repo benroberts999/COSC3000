@@ -44,3 +44,7 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 ## [Week 4](./04-week4)
 
 * Time-series data examples, including Fourier transforms, autocorrelation, heatmaps, seasonal trends etc.
+
+## [Week 5](./05-week5)
+
+* Multi-variate data: 3D data plotting, multi-regression, heatmaps, spatial statistics (correlation)
