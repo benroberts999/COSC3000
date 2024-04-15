@@ -48,3 +48,12 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 ## [Week 5](./05-week5)
 
 * Multi-variate data: 3D data plotting, multi-regression, heatmaps, spatial statistics (correlation)
+
+## [Week 6](./06-week6)
+
+* PCA: Principle component analysis
+
+## [Week 8](./08-week8)
+
+* k-means clustering
+* 4D+ plotting: contours, colour-maps, quiver plots, stream plots, meshgrid
