@@ -6,9 +6,11 @@ I'll add to it as the semester progresses.
 Feel free to comment (or better yet, submit a pull request) if you spot any errors, have a nicer way to do something, or have any other comments/suggestions!
 
 * [00-Basic](./00-Basic/)
-  * Some very basic introductory python versions of matlab scripts
+  * Some very basic introductory python versions of the introductory matlab scripts from the course blackboard
 
-## [Week 1](./01-week1)
+## [Week 1 - reading data files](./01-week1)
+
+* [wk1 lecture slides](https://docs.google.com/presentation/d/1qCH40i4_cPJE_8tVtHwskWKRcLiuy6kGvHwaPKEW090/)
 
 * [read-files](./01-week1/read-files/)
   * A number of basic examples showing reading in text files + plotting
@@ -31,29 +33,37 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 ## [proj1-example](./01-proj1-example)
 
 * A bare-bones python example similar to provided matlab example for first project
+* You'll need to download the data from the blackboard site
 
-## [Week 2](./02-week2)
+## [Week 2 - univariate data](./02-week2)
 
 * Example "height" data plots from the lecture
 * Solutions to week 2 workshop (flu data)
+* [wk2 lecture slides](https://docs.google.com/presentation/d/1MEr2en0ZY9c_vEVjtdvMyL6FgKkFNqzZvlqKbGNef8Q/)
 
-## [Week 3](./03-week3)
+## [Week 3 - bivariate data](./03-week3)
 
 * Bivariate examples: fit, correlations, weigthed fit
+* [wk3 lecture slides](https://docs.google.com/presentation/d/1U6dCu6pUCqWQO9CPZZQDFs1ES0UFZfuZWyH0vNMQ0Z8/)
 
-## [Week 4](./04-week4)
+## [Week 4 - time series data](./04-week4)
 
 * Time-series data examples, including Fourier transforms, autocorrelation, heatmaps, seasonal trends etc.
+* [wk4 lecture slides](https://docs.google.com/presentation/d/1GIfTiEpDytQpEFMuk0ufs-B3C4oPm1IudsMzf2SHuX0/)
 
-## [Week 5](./05-week5)
+## [Week 5 - multivariate data](./05-week5)
 
 * Multi-variate data: 3D data plotting, multi-regression, heatmaps, spatial statistics (correlation)
+* [wk5 lecture slides](https://docs.google.com/presentation/d/13RoW-yhqM_cQGh15Vh_sYGbmSIy8y02QSW3u3kqKHlE/)
 
-## [Week 6](./06-week6)
+## [Week 6 - principle component analysis](./06-week6)
 
-* PCA: Principle component analysis
+* PCA: Principle component analysis examples
+* [wk6 lecture slides](https://docs.google.com/presentation/d/1-G3EuwZlFtfIAM7CQuF7EUT8_YKq8KfzvKXdpj5m1cM/)
+* (week 7 was covered by other lecturer)
 
-## [Week 8](./08-week8)
+## [Week 8 - clustering](./08-week8)
 
-* k-means clustering
+* k-means clustering and extensions
 * 4D+ plotting: contours, colour-maps, quiver plots, stream plots, meshgrid
+* [wk8 lecture slides](https://docs.google.com/presentation/d/1a345fO3CHYPVPX2o28ZRyJ-9S9d6HN3l9r-roi43j1U/)
