@@ -49,6 +49,7 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 ## [Week 4 - time series data](./04-week4)
 
 * Time-series data examples, including Fourier transforms, autocorrelation, heatmaps, seasonal trends etc.
+* interative plot example with ipywidgets
 * [wk4 lecture slides](https://docs.google.com/presentation/d/1GIfTiEpDytQpEFMuk0ufs-B3C4oPm1IudsMzf2SHuX0/)
 
 ## [Week 5 - multivariate data](./05-week5)
@@ -67,3 +68,9 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 * k-means clustering and extensions
 * 4D+ plotting: contours, colour-maps, quiver plots, stream plots, meshgrid
 * [wk8 lecture slides](https://docs.google.com/presentation/d/1a345fO3CHYPVPX2o28ZRyJ-9S9d6HN3l9r-roi43j1U/)
+
+## [Week 9 - 3+D plots, and styles](./09-week9)
+
+* Interactive plotting and animations, python 'magics'
+* Interpolation
+* Wire frames, surface plots, 3D contours and projections
