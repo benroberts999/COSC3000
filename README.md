@@ -73,4 +73,5 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 
 * Interactive plotting and animations, python 'magics'
 * Interpolation
-* Wire frames, surface plots, 3D contours and projections
+* Wire frames, surface plots, 3D contours and projections (galaxy-surface)
+* Plotting styles, colors, fonts, style sheets
