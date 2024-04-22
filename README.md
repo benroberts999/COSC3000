@@ -75,3 +75,4 @@ Feel free to comment (or better yet, submit a pull request) if you spot any erro
 * Interpolation
 * Wire frames, surface plots, 3D contours and projections (galaxy-surface)
 * Plotting styles, colors, fonts, style sheets
+* dealing with large output file sizes + scalable graphics
